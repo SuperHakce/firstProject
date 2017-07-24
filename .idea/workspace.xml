@@ -48,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunnableTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunnableTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/smart/thread/RunnableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8136986" vertical-offset="2794" max-vertical-offset="3888">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2794" max-vertical-offset="3888">
               <caret line="149" column="45" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="45" />
               <folding>
                 <marker date="1500625218729" expanded="true" signature="1893:1935" placeholder="SELECT * FRO..t_ticket..." />
@@ -60,6 +60,16 @@
                 <marker date="1500625218729" expanded="true" signature="3950:4000" placeholder="SELECT schoo..t_event..." />
                 <marker date="1500625218729" expanded="true" signature="4538:4591" placeholder="UPDATE t_eve..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smart-context.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/smart-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.860927" vertical-offset="1836" max-vertical-offset="2889">
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1255,12 +1265,12 @@
       <workItem from="1500688120238" duration="34262000" />
       <workItem from="1500776437775" duration="10502000" />
       <workItem from="1500787594214" duration="13982000" />
-      <workItem from="1500864689958" duration="2373000" />
+      <workItem from="1500864689958" duration="3572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335780000" />
+    <option name="totallyTimeSpent" value="336979000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1284,7 +1294,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1307,7 +1317,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25869894" sideWeight="0.38202247" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3360522" sideWeight="0.5310136" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19249593" sideWeight="0.5310136" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886535" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1607,14 +1617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/smart-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7297297" vertical-offset="216" max-vertical-offset="2889">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/smart/dao/LoginLogDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="864">
@@ -1803,7 +1805,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/smart/thread/RunnableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8136986" vertical-offset="2794" max-vertical-offset="3888">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2794" max-vertical-offset="3888">
           <caret line="149" column="45" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="45" />
           <folding>
             <marker date="1500625218729" expanded="true" signature="1893:1935" placeholder="SELECT * FRO..t_ticket..." />
@@ -1812,6 +1814,14 @@
             <marker date="1500625218729" expanded="true" signature="3950:4000" placeholder="SELECT schoo..t_event..." />
             <marker date="1500625218729" expanded="true" signature="4538:4591" placeholder="UPDATE t_eve..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/smart-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.860927" vertical-offset="1836" max-vertical-offset="2889">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
