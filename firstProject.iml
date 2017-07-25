@@ -63,5 +63,6 @@
     <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: taglibs:standard:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.directwebremoting:dwr:3.0.0-RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: p6spy:p6spy:2.0.2" level="project" />
   </component>
 </module>

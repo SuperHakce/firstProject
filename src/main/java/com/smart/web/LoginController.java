@@ -64,8 +64,8 @@ public class LoginController{
 	public ModelAndView addSchoolEvent(HttpServletRequest request){
 		ModelAndView modelAndView = new ModelAndView();
 		SchoolEvent schoolEvent = new SchoolEvent();
-		UUID uuid = UUID.randomUUID();
-		schoolEvent.setEventId(uuid.toString());
+		String newID = userService.createNewID();
+		schoolEvent.setEventId(newID);
 		schoolEvent.setSchoolCode(Integer.parseInt(request.getParameter("schoolCode")));
 		schoolEvent.setSchoolName(request.getParameter("schoolName"));
 		schoolEvent.setEventText(request.getParameter("eventText"));
@@ -210,15 +210,15 @@ public class LoginController{
 		String setPageNo = request.getParameter("setPage");
 		int pageNo = 1;
 		if(request.getParameter("checkAll") != null && request.getParameter("checkAll").equals("Check All")){
-			userService.cancelCheckAllAndCheckAll(0);
+			userService.cancelCheckAllAndCheckAll(0,setSearchName);
 			pageNo = Integer.parseInt(setPageNo);
 		}
 		if(request.getParameter("cancelCheckAll") != null && request.getParameter("cancelCheckAll").equals("Cancel Check All")){
-			userService.cancelCheckAllAndCheckAll(1);
+			userService.cancelCheckAllAndCheckAll(1,setSearchName);
 			pageNo = Integer.parseInt(setPageNo);
 		}
 		if(request.getParameter("invertCheck") != null && request.getParameter("invertCheck").equals("Invert Check")){
-			userService.invertCheck();
+			userService.invertCheck(setSearchName);
 			pageNo = Integer.parseInt(setPageNo);
 		}
 		if(request.getParameter("checkAllThisPage") != null && request.getParameter("checkAllThisPage").equals("Check All ThisPage")){
@@ -246,6 +246,8 @@ public class LoginController{
 		if(setPageSize != null && setPageSize != "" && setPageSize != " "){
 			String replacePageSize = setPageSize.replaceAll(" ","");
 			pageSize = Integer.parseInt(replacePageSize);
+			if(pageSize <= 0)
+				pageSize = 15;
 		}
 		Page pagedTopic = userService.findEventByPage(pageNo,searchName,pageSize);
 		pagedTopic.setSearchName(searchName);

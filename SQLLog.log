@@ -1,0 +1,115 @@
+2017-07-25 18:03:11,800 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] -  SELECT count(*) FROM t_user  WHERE user_name = admin and password = 123456 
+2017-07-25 18:03:11,899 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] -  SELECT user_id,user_name,credits  FROM t_user WHERE user_name =admin 
+2017-07-25 18:03:11,915 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] -  UPDATE t_user SET  last_visit=Tue Jul 25 18:03:11 CST 2017,last_ip=0:0:0:0:0:0:0:1,credits=2185  WHERE user_id =1
+2017-07-25 18:03:11,924 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - INSERT INTO t_login_log(user_id,ip,login_datetime) VALUES(1,0:0:0:0:0:0:0:1,Tue Jul 25 18:03:11 CST 2017)
+2017-07-25 18:03:11,991 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] -  SELECT history_id,user_id,user_name,school_name,start_date,end_date  FROM t_history WHERE user_name = admin 
+2017-07-25 18:03:13,253 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:13,256 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %% order by event_id limit 0,15 
+2017-07-25 18:03:15,981 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %e% 
+2017-07-25 18:03:15,983 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %e% order by event_id limit 0,15 
+2017-07-25 18:03:18,099 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:18,101 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %% order by event_id limit 0,15 
+2017-07-25 18:03:19,205 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT event_id,is_check FROM t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:19,207 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 5W5eOEzbDYLVErVpcqth0 
+2017-07-25 18:03:19,258 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 75WyaHd09DV4QBm25P5s0 
+2017-07-25 18:03:19,284 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 7teOQd70cN6GsRMwcx7y 
+2017-07-25 18:03:19,308 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 7tsN0pRMK3PiIpAOqaJ4 
+2017-07-25 18:03:19,342 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 9C40AQ4W5wCP0GQMErLy0 
+2017-07-25 18:03:19,374 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 9g5D0PHydc2c1udefkN70 
+2017-07-25 18:03:19,398 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = 9GUazr8j9tTeIt08rURL0 
+2017-07-25 18:03:19,424 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = bBx4R09Y0Mqac1OEcOLf 
+2017-07-25 18:03:19,456 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = fnbvS1QsgVHmrc9IJLdp 
+2017-07-25 18:03:19,481 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = FOYssG5ofdr9TwY7hH9b 
+2017-07-25 18:03:19,515 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = fr1h48v2FsyQqfQrmWTn0 
+2017-07-25 18:03:19,539 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = FsxO9N72zzy0LPakh4Ye 
+2017-07-25 18:03:19,564 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = FuwH489golK0oH83Nino 
+2017-07-25 18:03:19,588 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = FwR0BsE7bpgY4isRHz040 
+2017-07-25 18:03:19,614 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = h8tSnh6PC2vKg0MP53T40 
+2017-07-25 18:03:19,637 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = hmAI8mhVhWe46W29I2b70 
+2017-07-25 18:03:19,671 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = hmiDysY4e7J6wqomIl3A 
+2017-07-25 18:03:19,695 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = HTuM6G01Ax1ek0jOez3I0 
+2017-07-25 18:03:19,720 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = HV3QH4aKACdqO0zko23z 
+2017-07-25 18:03:19,746 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = HXoeBv3vLWEpvuHp0OCF0 
+2017-07-25 18:03:19,821 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = HzAky1u0RqqmxoK5TW6b0 
+2017-07-25 18:03:19,852 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = Ja3CKCUjAYMgHCK3dVtb0 
+2017-07-25 18:03:19,887 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = Jcqx05BMnOnfjvX1C9Rq 
+2017-07-25 18:03:19,910 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = jFNes6fszdVRWvG2gAWe0 
+2017-07-25 18:03:19,935 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = JgIBkw9EVoHsk8jO1dwu0 
+2017-07-25 18:03:19,959 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = JiBv3ianQBVpxLHRWXpP 
+2017-07-25 18:03:19,984 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = JU2mQQRCRJuQ4rwjshTv 
+2017-07-25 18:03:20,026 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = jVj7uIrUoWV5C9aLxeBz0 
+2017-07-25 18:03:20,059 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = jVrvKBU1OHTIb8eTk3nS 
+2017-07-25 18:03:20,084 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = jXeiDl1ADsQnz7cR5j7T 
+2017-07-25 18:03:20,108 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = jXS6H1s7o70auz03Ojnx 
+2017-07-25 18:03:20,133 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = L3dTJLJhSLvLz8bdXyeg 
+2017-07-25 18:03:20,160 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = LBWLEuLSmDNVs50YQRbr 
+2017-07-25 18:03:20,191 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = lcOCeRlURICBSbq7FCBb 
+2017-07-25 18:03:20,215 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = lgutNOTgUwAgiNjmrFH80 
+2017-07-25 18:03:20,241 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = LLLf4Onda9BgbnG35fkR0 
+2017-07-25 18:03:20,264 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = lWPPaz6U00RqA9MHSY8a 
+2017-07-25 18:03:20,289 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nb9ovM8ajBhX728CdvPE 
+2017-07-25 18:03:20,324 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nHpAnzbvWkV8qHluRhMD0 
+2017-07-25 18:03:20,347 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nHrXalqh8giN2IXz5tAO0 
+2017-07-25 18:03:20,372 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = NQjY2eSY5el08PzhUqel 
+2017-07-25 18:03:20,396 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nr5cc2J0InAqmzVHvWiJ 
+2017-07-25 18:03:20,421 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nRwPIEoFJN0HqyQaEWGd 
+2017-07-25 18:03:20,455 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = ntmuFS97qwuWegav1Rje0 
+2017-07-25 18:03:20,479 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = nv19GvYCttvmc3cqAWzS 
+2017-07-25 18:03:20,503 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = Ra1IjvyWyOWuJumfLrm90 
+2017-07-25 18:03:20,528 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = rpL0dFYLaLXR394fcnCm 
+2017-07-25 18:03:20,554 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 1 WHERE event_id = tqJ5QzJcwrLv6QeCPEFj 
+2017-07-25 18:03:20,578 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:20,579 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %% order by event_id limit 0,15 
+2017-07-25 18:03:22,139 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT event_id,is_check FROM t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:22,141 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 5W5eOEzbDYLVErVpcqth0 
+2017-07-25 18:03:22,194 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 75WyaHd09DV4QBm25P5s0 
+2017-07-25 18:03:22,218 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 7teOQd70cN6GsRMwcx7y 
+2017-07-25 18:03:22,243 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 7tsN0pRMK3PiIpAOqaJ4 
+2017-07-25 18:03:22,268 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 9C40AQ4W5wCP0GQMErLy0 
+2017-07-25 18:03:22,292 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 9g5D0PHydc2c1udefkN70 
+2017-07-25 18:03:22,317 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = 9GUazr8j9tTeIt08rURL0 
+2017-07-25 18:03:22,351 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = bBx4R09Y0Mqac1OEcOLf 
+2017-07-25 18:03:22,375 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = fnbvS1QsgVHmrc9IJLdp 
+2017-07-25 18:03:22,399 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = FOYssG5ofdr9TwY7hH9b 
+2017-07-25 18:03:22,424 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = fr1h48v2FsyQqfQrmWTn0 
+2017-07-25 18:03:22,449 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = FsxO9N72zzy0LPakh4Ye 
+2017-07-25 18:03:22,474 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = FuwH489golK0oH83Nino 
+2017-07-25 18:03:22,507 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = FwR0BsE7bpgY4isRHz040 
+2017-07-25 18:03:22,531 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = h8tSnh6PC2vKg0MP53T40 
+2017-07-25 18:03:22,559 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = hmAI8mhVhWe46W29I2b70 
+2017-07-25 18:03:22,589 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = hmiDysY4e7J6wqomIl3A 
+2017-07-25 18:03:22,614 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = HTuM6G01Ax1ek0jOez3I0 
+2017-07-25 18:03:22,648 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = HV3QH4aKACdqO0zko23z 
+2017-07-25 18:03:22,672 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = HXoeBv3vLWEpvuHp0OCF0 
+2017-07-25 18:03:22,696 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = HzAky1u0RqqmxoK5TW6b0 
+2017-07-25 18:03:22,721 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = Ja3CKCUjAYMgHCK3dVtb0 
+2017-07-25 18:03:22,745 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = Jcqx05BMnOnfjvX1C9Rq 
+2017-07-25 18:03:22,771 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = jFNes6fszdVRWvG2gAWe0 
+2017-07-25 18:03:22,804 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = JgIBkw9EVoHsk8jO1dwu0 
+2017-07-25 18:03:22,828 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = JiBv3ianQBVpxLHRWXpP 
+2017-07-25 18:03:22,879 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = JU2mQQRCRJuQ4rwjshTv 
+2017-07-25 18:03:22,903 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = jVj7uIrUoWV5C9aLxeBz0 
+2017-07-25 18:03:22,927 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = jVrvKBU1OHTIb8eTk3nS 
+2017-07-25 18:03:22,962 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = jXeiDl1ADsQnz7cR5j7T 
+2017-07-25 18:03:22,984 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = jXS6H1s7o70auz03Ojnx 
+2017-07-25 18:03:23,010 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = L3dTJLJhSLvLz8bdXyeg 
+2017-07-25 18:03:23,034 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = LBWLEuLSmDNVs50YQRbr 
+2017-07-25 18:03:23,061 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = lcOCeRlURICBSbq7FCBb 
+2017-07-25 18:03:23,084 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = lgutNOTgUwAgiNjmrFH80 
+2017-07-25 18:03:23,118 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = LLLf4Onda9BgbnG35fkR0 
+2017-07-25 18:03:23,142 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = lWPPaz6U00RqA9MHSY8a 
+2017-07-25 18:03:23,167 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nb9ovM8ajBhX728CdvPE 
+2017-07-25 18:03:23,191 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nHpAnzbvWkV8qHluRhMD0 
+2017-07-25 18:03:23,217 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nHrXalqh8giN2IXz5tAO0 
+2017-07-25 18:03:23,241 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = NQjY2eSY5el08PzhUqel 
+2017-07-25 18:03:23,275 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nr5cc2J0InAqmzVHvWiJ 
+2017-07-25 18:03:23,299 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nRwPIEoFJN0HqyQaEWGd 
+2017-07-25 18:03:23,324 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = ntmuFS97qwuWegav1Rje0 
+2017-07-25 18:03:23,348 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = nv19GvYCttvmc3cqAWzS 
+2017-07-25 18:03:23,373 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = Ra1IjvyWyOWuJumfLrm90 
+2017-07-25 18:03:23,407 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = rpL0dFYLaLXR394fcnCm 
+2017-07-25 18:03:23,430 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - UPDATE t_event SET is_check = 0 WHERE event_id = tqJ5QzJcwrLv6QeCPEFj 
+2017-07-25 18:03:23,455 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %% 
+2017-07-25 18:03:23,459 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %% order by event_id limit 0,15 
+2017-07-25 18:03:26,687 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT count(*) from t_event WHERE event_id LIKE %ad% 
+2017-07-25 18:03:26,689 [1928572105@qtp-1336420731-0] [com.smart.sqlInterceptor.TracingBeforeAdvice] [DEBUG] - SELECT * FROM t_event WHERE event_id LIKE %ad% order by event_id limit 0,15 

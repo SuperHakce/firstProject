@@ -278,11 +278,12 @@ public class SchoolEventDao {
         /**
          * 全部反选
          */
-        public void invertCheck(){
-                String sqlFindAll = "SELECT event_id,is_check FROM t_event ";
+        public void invertCheck(String name){
+                String sqlFindAll = "SELECT event_id,is_check FROM t_event WHERE event_id LIKE ? ";
                 final String sqlUpdateCheck = "UPDATE t_event SET is_check = ? WHERE event_id = ? ";
                 List<SchoolEvent> schoolEvents = new ArrayList<SchoolEvent>();
-                jdbcTemplate.query(sqlFindAll, new RowCallbackHandler() {
+                String searchName = "%" + name + "%";
+                jdbcTemplate.query(sqlFindAll, new Object[]{searchName},new RowCallbackHandler() {
                         @Override
                         public void processRow(ResultSet resultSet) throws SQLException {
                                 SchoolEvent schoolEvent = new SchoolEvent();
@@ -303,11 +304,12 @@ public class SchoolEventDao {
          * 全选与全不选
          * @param who
          */
-        public void cancelCheckAllAndCheckAll(final int who){
-                String sqlFindAll = "SELECT event_id,is_check FROM t_event ";
+        public void cancelCheckAllAndCheckAll(final int who,String name){
+                String sqlFindAll = "SELECT event_id,is_check FROM t_event WHERE event_id LIKE ? ";
                 final String sqlUpdateCheck = "UPDATE t_event SET is_check = ? WHERE event_id = ? ";
+                String searchName = "%" + name + "%";
                 List<SchoolEvent> schoolEvents = new ArrayList<SchoolEvent>();
-                jdbcTemplate.query(sqlFindAll, new RowCallbackHandler() {
+                jdbcTemplate.query(sqlFindAll, new Object[]{searchName},new RowCallbackHandler() {
                         @Override
                         public void processRow(ResultSet resultSet) throws SQLException {
                                 int isCheck = 0;

@@ -68,6 +68,7 @@ public class UserServiceTest extends AbstractTransactionalTestNGSpringContextTes
         for(int i = 1;i <= 110;i ++){
             SchoolEvent schoolEvent = new SchoolEvent();
             schoolEvent.setEventId(userService.createNewID());
+            logger.debug("ID = " + schoolEvent.getEventId());
             logger.debug(userService.createNewID());
             schoolEvent.setSchoolName(getSchoolRandomString(10));
             schoolEvent.setSchoolCode(random.nextInt(10000));

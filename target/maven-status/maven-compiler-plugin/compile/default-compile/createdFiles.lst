@@ -8,6 +8,7 @@ com\smart\dao\SchoolEventDao$5.class
 com\smart\dao\UserLeaningHistoryDao$1.class
 com\smart\dao\hibernate\SchoolEventHibernateDao.class
 com\smart\exception\schoolNameNotNull.class
+com\smart\p6spylog\P6spylog.class
 com\smart\dao\CheckBox.class
 com\smart\dao\SchoolEventDao$5$1.class
 com\smart\dao\RunnableTest.class
@@ -23,6 +24,7 @@ com\smart\dao\Page.class
 com\smart\dao\SchoolEventDao$1.class
 com\smart\dao\UserDao$1.class
 com\smart\dao\UserLeaningHistoryDao$2.class
+com\smart\sqlInterceptor\TracingBeforeAdvice.class
 com\smart\thread\ThreadHelp.class
 com\smart\dao\SchoolEventDao$8.class
 com\smart\dao\LoginLogDao.class

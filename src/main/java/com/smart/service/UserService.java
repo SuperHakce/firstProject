@@ -208,11 +208,11 @@ public class UserService {
         schoolEventDao.deleteEventGroup(eventId);
     }
 
-    public void invertCheck(){
-        schoolEventDao.invertCheck();
+    public void invertCheck(String name){
+        schoolEventDao.invertCheck(name);
     }
-    public void cancelCheckAllAndCheckAll(int who){
-        schoolEventDao.cancelCheckAllAndCheckAll(who);
+    public void cancelCheckAllAndCheckAll(int who,String name){
+        schoolEventDao.cancelCheckAllAndCheckAll(who,name);
     }
     public void invertCheckThisPage(int pageNo,String searchName,int pageSize){
         schoolEventDao.invertCheckThisPage(pageNo,searchName,pageSize);

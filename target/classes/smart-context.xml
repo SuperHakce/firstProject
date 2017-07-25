@@ -20,17 +20,44 @@
     <context:component-scan base-package="com.smart.thread"/>
     <context:component-scan base-package="com.smart.primarykey"/>
 
-    <!-- 配置数据源 Jakarta DBCP 开源数据源实现方案 -->
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-          destroy-method="close"
-          p:driverClassName="com.mysql.jdbc.Driver"
-          p:url="jdbc:mysql://localhost:3306/sampledb?characterEncoding=utf-8"
-          p:username="root"
-          p:password="123456" />
 
-    <!-- 配置 Jdbc 模板，LoginLogDao,UserDao 中setjdbcTemplate()方法使用 jdbcTemplate Bean 完成注入 -->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
-          p:dataSource-ref="dataSource" />
+    <bean id="theTracingBeforeAdvice" class="com.smart.sqlInterceptor.TracingBeforeAdvice"/>
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass">
+            <value>true</value>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>theTracingBeforeAdvice</value>
+            </list>
+        </property>
+        <property name="beanNames">
+            <list>
+                <value>jdbcTemplate</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="jdbcTemplate"
+          class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="dataSource" />
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/sampledb?characterEncoding=utf-8" />
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+        <property name="maxActive" value="100" />
+        <property name="maxIdle" value="30" />
+        <property name="maxWait" value="1000" />
+        <property name="defaultAutoCommit" value="true" />
+        <property name="removeAbandoned" value="true" />
+        <property name="removeAbandonedTimeout" value="60" />
+    </bean>
+
 
     <!-- 配置事务管理器 -->
     <bean id="transactionManager"
